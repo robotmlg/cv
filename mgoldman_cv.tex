@@ -1,0 +1,280 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{friggeri-mlg-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\begin{document}
+
+\header{matt}{goldman}{software engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+\href{mailto:matt@goldman.zone}{matt@goldman.zone}
+\href{http://matt.goldman.zone}{matt.goldman.zone}
+\section{programming}
+Java
+SQL
+Python
+Unix/Linux
+HTML, CSS, JS
+C
+Swift
+\LaTeX
+\section{platforms}
+Elasticsearch
+MySQL
+Redis
+Apache Kafka
+Docker
+AWS
+\section{tools}
+Git
+GitHub
+Jira
+IntelliJ
+SignalFx
+Grafana
+Kibana
+\end{aside}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2016---}
+{Mark43}
+{New York, NY}
+{\emph{Software Engineer 2016--2019}\\
+\emph{Senior Software Engineer 2019---}
+Technologies: Java, MySQL, Redis, Elasticsearch, Kafka
+\begin{itemize}[leftmargin=*]
+\item Member of Records Management System team, building cloud-based RMS software
+for public safety customers.
+\item Member of team building brand-new Evidence Management module from the 
+ground up, integrating with the exiting RMS in a live multi-tenant environment
+\item Served as member of On-Call Production Support rotation since 2017
+\item Acted as Technical Lead on numerous projects including
+\begin{itemize}
+\item Transitioned from internal feature flag management system to 
+\href{https://launchdarkly.com}{LaunchDarkly}
+\item Rearchitected the Tasks module (to-do lists for RMS users) to allow 
+improved linking of tasks to other entities in the RMS
+\item Extended PDF export subsystem to fill report data into a customer-provided
+fillable PDF form
+\item Designed and managed implementation of integration with Zebra label printers
+\end{itemize}
+\item Attended Elasticsearch training courses from ElasticCo on Core Elasticsearch
+and Advanced Data Modeling in Elasticsearch
+\item Collaborated with remote team in Toronto, Canada.  At times, functioned 
+independently as the only team member in NYC
+\end{itemize}}
+\entry
+{2015}
+{Merck \& Co., Inc.}
+{Branchburg, New Jersey}
+{\emph{Summer Intern, Applied Technology Group}
+Technologies: Java, Python
+\begin{itemize}[leftmargin=*]
+\item Designed and implemented submodule of a larger webservice using the OpenL 
+Tablets decision tables engine to calculate patients' risks for type II diabetes
+and cardiovascular disease
+%\item Became a core team member on experimental project exploring data provenance
+% and similarity.
+%\item Developed software in Scrum/Agile development environment.
+\item Collaborated with remote teams in Boston and Washington, D.C.
+\end{itemize}}
+\entry
+{2008-2014}
+{Storming Robots, LLC}
+{Branchburg, New Jersey}
+{\emph{Instructor}
+\begin{itemize}[leftmargin=*]
+%\item Taught classes in robotics, programming, and video game design to students in grades two through twelve.
+\item Used the Lego Mindstorms RCX and NXT programmed in RoboLab (Labview)  and RobotC (C).
+%\item Carnegie Mellon Robotics Academy Certified RobotC/Mindstorms Instructor
+\item Taught advanced level RobotC programming including inter-robot communication using Bluetooth and XBee, I2C interfacing, and low level motor feedback control.
+%\item In 2008, coached FIRST Lego League team The Green Hawks, winning the Teamwork Award at both regional and State (NJ) compeitions
+%\item In 2010, mentored FIRST Lego League team RoboBrain, winning third place in the research project competition at the NJ State Finals
+%\item From 2008-2010, coached FIRST Lego League teams, winning regional and State (NJ) level Teamwork Award in 2008,
+%and winning third place in the research project competition at the NJ State Finals in 2010.
+%\item Also in 2010, mentored several teams competing in the Rescue competition as part of RoboCup Junior
+\end{itemize}}
+%------------------------------------------------
+\end{entrylist}
+%
+%%----------------------------------------------------------------------------------------
+%%	PROJECTS SECTION
+%%----------------------------------------------------------------------------------------
+\section{projects}
+\begin{entrylist}
+\entry
+{2019--2020}
+{podsnatch}
+{\href{https://github.com/robotmlg/podsnatch}{github.com/robotmlg/podsnatch}}
+{
+\begin{itemize}[leftmargin=*]
+\item Lightweight podcast downloader written in Python. 
+\item Runs in a Docker container for better modularity and cross-platform compatibility.
+\item Built because I wanted to archive podcasts I enjoy in case they were taken down in the future.  
+\item Learned the structure of RSS feeds, and the non-standard quirks of certain 
+podcast providers
+\end{itemize}
+}
+\entry
+{2017--2018}
+{These American Lives}
+{\href{https://github.com/robotmlg/these-american-lives}{github.com/robotmlg/these-american-lives}}
+{\begin{itemize}[leftmargin=*]
+\item Website built with Swift that tracks reruns of 
+\href{https://thisamericanlife.org}{\emph{This American Life}}
+\item Built to track when old episodes of \emph{This American Life} are re-aired,
+information that is not listed on
+\href{https://thisamericanlife.org}{thisamericanlife.org}
+\item Learned the basics of web scraping and parsing HTML
+\item Formerly hosted at theseamericanlives.com
+\end{itemize}}
+%\entry
+%{2005-2011}
+%{Robotics Team}
+%{Branchburg, New Jersey}
+%{\emph{Storming Robots, LLC}
+%\begin{itemize}[leftmargin=*]
+%\item Member of a local robotics team competing in various competitions, including:
+%  \begin{itemize}[leftmargin=*]
+%  \item RoboCup Junior from 2008 through 2011, fielding Lego Mindstorms NXT robots programmed in RobotC in the Soccer event.
+%  Used advanced I2C sensors such as compass and infrared seeker.
+%  \item ZeroRobotics in 2010 and 2011. This is a competition created by MIT and NASA in which competitors get to play a game with MIT's SPHERES robots on board the International Space Station.
+%  The robots are programmed in C, and in 2011 my team came in 1\textsuperscript{st} out of all teams competing.
+%  \end{itemize}
+%\item Completed many other robotics projects, including
+%  \begin{itemize}[leftmargin=*]
+%  \item Rocky IV, a robotic hand that plays rock-paper-scissors against a human
+%  opponent, using an accelerometer to track the player's hand position.
+%  \item Cerberus, an all-terrain rover that uses GPS to retrace a pre-recorded path
+%  input by the user.
+%  \end{itemize}
+%\item More information about these projects and others can be found at my website,
+%\url{mattgoldman.us}
+%\end{itemize}}
+\end{entrylist}
+
+%---------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{May 2016}
+{B.S. {\normalfont in Computer Science,} B.A. {\normalfont in Math}}
+{Rutgers, the State University of New Jersey}
+{\emph{3.97 GPA, Honors Undergraduate Student, Presidential Scholar}
+\begin{itemize}[leftmargin=*,topsep=0pt]
+%\item Computer Science classes:
+%\setlength\multicolsep{0pt}
+%\begin{multicols}{2}
+%  \begin{itemize}[leftmargin=*,topsep=0pt]
+%    \item Computer Algorithms
+%    \item Graph Theory
+%    \item Principles of Programming Languages
+%    \item Systems Programming
+%    \item Compilers
+%    \item Operating Systems Design
+%    \item Internet Technology
+%    \item Foundations of CS (Graduate level course on complexity and computability)
+%    \item Computer Structures (Graduate level computer architecture course)
+%    \item Database Management
+%  \end{itemize}
+%\end{multicols}
+%\item Inducted into Phi Beta Kappa Society as a Junior
+%\item Received 2014 Academic Excellence Award, awarded to the top 10\% of sophomore students
+%\item Member of Honors Program in the School of Arts and Sciences
+\item Minor: Physics
+\end{itemize}}
+\\
+%------------------------------------------------
+%\entry
+%{2008--2012}
+%{High School}
+%{Bernards High School, Bernardsville, New Jersey}
+%{\begin{itemize}[leftmargin=*]
+%\item 11 Advanced Placement classes, including AP Calculus BC, AP Chemistry, and AP Physics B and C
+%\item Ranked in top 10\% of graduating class
+%\end{itemize}}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+%\section{awards and honors}
+%
+%\begin{entrylist}
+%%------------------------------------------------
+%\entry
+%{2015}
+%{Phi Beta Kappa Society}
+%{Rutgers, the State University of New Jersey}
+%{\emph{Honor Society}
+%\begin{itemize}[leftmargin=*]
+%\item ``The oldest and most prestigious liberal arts honorary society in the 
+%United States.''
+%\item ``To be nominated in the junior year, students must\ldots have a cumulative average of 3.800 or above.'' (\url{pbk.rutgers.edu/about-pbk})
+%\end{itemize}
+%}
+%%------------------------------------------------
+%\entry
+%{2012}
+%{Presidential Scholarship}
+%{Rutgers, the State University of New Jersey}
+%{\emph{Undergraduate Scholarship}
+%\begin{itemize}[leftmargin=*]
+%\item Awarded to students with competitive academic credentials, minimum 2250 combined SAT or an ACT score of 35 and an A grade-point average.
+%\end{itemize}
+%}
+%%------------------------------------------------
+%\entry
+%{2012}
+%{Olcott Major Scholarship}
+%{Bernards High School, Bernardsville, New Jersey}
+%{\emph{Undergraduate Scholarship}
+%\begin{itemize}[leftmargin=*]
+%\item Awarded to a top student in the graduating class as selected by the Somerset Hills School District Board of Education.
+%\end{itemize}
+%}
+%%------------------------------------------------
+%\end{entrylist}
+%
+\textbf{Hobbies:} playing guitar (classical, acoustic, and electric), solving crossword puzzles, reading, watching classic movies, fiddling with my Mac mini home server
+\end{document}
